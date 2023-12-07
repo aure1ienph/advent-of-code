@@ -29,10 +29,19 @@ CSV.foreach(path) do |row|
   ROWS << {id: id, green: green, red: red, blue: blue}
 end
 
+# Part 1
+
+# ROWS.each do |row|
+#   if row[:red].max <= 12 && row[:green].max <= 13 && row[:blue].max <= 14
+#     ids_sum += row[:id]
+#   end
+# end
+
+# Part 2
+
 ROWS.each do |row|
-  if row[:red].max <= 12 && row[:green].max <= 13 && row[:blue].max <= 14
-    ids_sum += row[:id]
-  end
+  row_powers = row[:red].max * row[:green].max * row[:blue].max
+  ids_sum += row_powers
 end
 
 p ids_sum
