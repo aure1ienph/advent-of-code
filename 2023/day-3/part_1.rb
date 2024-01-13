@@ -1,6 +1,6 @@
 require 'csv'
 
-input = 'input.csv'
+input = 'inputs/input.csv'
 array_input = []
 part_numbers = 0
 
