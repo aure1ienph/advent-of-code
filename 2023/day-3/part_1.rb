@@ -36,3 +36,5 @@ array_input.each_with_index do |row, i|
 end
 
 p part_numbers
+
+# Fail to get the answer :/
